@@ -13,6 +13,19 @@
     <link rel="stylesheet" href="style.css" />
     <title>Skillup Bank | Welcome to Skillup Bank</title>
   </head>
+    <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "6e8eb2c9-5d5c-4faf-a392-a70434d8541c", // The ID of this integration.
+      region: "jp-tok", // The region your integration is hosted in.
+      serviceInstanceID: "be4c3d18-a130-46de-9f00-0d0b7df16c77", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
   <body>
     <header class="header">
       <nav class="nav">
